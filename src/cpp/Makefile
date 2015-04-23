@@ -5,7 +5,7 @@ CXXFLAGS := -std=c++0x -Wall -Wuninitialized -Wno-div-by-zero -fpermissive \
 
 SRCS := $(wildcard *.cpp)
 OBJS := $(SRCS:.cpp=.o)
-LIBS := -lpbdata -lblasr -llog4cpp -lboost_thread -lboost_program_options -lpthread 
+LIBS := -lpbdata -lblasr -llog4cpp -lboost_thread -lboost_program_options -lpthread -lboost_system
 
 all: OPTIMIZE = -O3
 
